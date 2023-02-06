@@ -12,11 +12,12 @@
 
 
 # Animations
-https://user-images.githubusercontent.com/114996205/217046953-33a188c0-ebd7-4418-8f1c-ed4ae697b6cd.mp4
 
-https://user-images.githubusercontent.com/114996205/217047710-6af1b46c-6894-4d4e-bf15-2e89c1f99717.mp4
+https://user-images.githubusercontent.com/114996205/217051567-519bc337-519e-43b1-aa0f-c7ee174960e5.mp4
 
-https://user-images.githubusercontent.com/114996205/217047848-34b9f226-2cc3-450b-a487-a9dc670fffe6.mp4
+https://user-images.githubusercontent.com/114996205/217051673-f78ab1ba-2a37-491b-9649-0b1baa2ae5a6.mp4
+
+https://user-images.githubusercontent.com/114996205/217051770-e4adf9cd-c8bb-4b7b-9d69-d365402117f0.mp4
 
 # Libraries
 
