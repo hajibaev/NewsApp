@@ -13,11 +13,12 @@
 
 # Animations
 
-https://user-images.githubusercontent.com/114996205/217051567-519bc337-519e-43b1-aa0f-c7ee174960e5.mp4
+![gif](https://user-images.githubusercontent.com/114996205/217053560-9d358bc9-4cd3-4c10-becb-67689aa3f3d4.gif)
 
-https://user-images.githubusercontent.com/114996205/217051673-f78ab1ba-2a37-491b-9649-0b1baa2ae5a6.mp4
+![gif2](https://user-images.githubusercontent.com/114996205/217053311-c21602a4-da52-4d1f-9c93-70aac115b86e.gif)
 
-https://user-images.githubusercontent.com/114996205/217051770-e4adf9cd-c8bb-4b7b-9d69-d365402117f0.mp4
+![gif3](https://user-images.githubusercontent.com/114996205/217053477-2cd87686-06cf-4a9d-a1e6-1676f29d6db4.gif)
+
 
 # Libraries
 
