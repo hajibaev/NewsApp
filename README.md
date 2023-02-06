@@ -13,11 +13,9 @@
 
 # Animations
 
-https://user-images.githubusercontent.com/114996205/217053951-f7b2c06a-ba89-41f3-9fef-5f5d1be9f8e2.mp4
-
-https://user-images.githubusercontent.com/114996205/217054121-2ba8f7ca-033b-487f-9094-949672e7c6f5.mp4
-
-https://user-images.githubusercontent.com/114996205/217054171-4fe5ab8d-f06c-477f-8091-6aae575ca23c.mp4
+![mtgif](https://user-images.githubusercontent.com/114996205/217056328-0f3e1361-bb30-48b8-8b33-0c3ba32bcb98.mov)
+![gif](https://user-images.githubusercontent.com/114996205/217056631-dbf03b52-e2e5-4458-92b6-7d5d329d4522.mp4)
+![gitsave](https://user-images.githubusercontent.com/114996205/217056796-6e4eb9c3-7485-4ceb-a96f-eb2620eaab1f.mp4)
 
 
 # Libraries
