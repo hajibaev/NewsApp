@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="progress">#e5e5e5</color>
+    <color name="ornge">#FF9800</color>
+    <color name="red">#E81313</color>
+    <color name="colorAccent">@color/header</color>
+    <color name="header">#212121</color>
+    <color name="app_background">#FFFFFF</color>
+    <color name="black_transparent">#B2000000</color>
+
+    <color name="black_light">#191919</color>
+
+    <color name="settings_color">#504D55</color>
+
+    <color name="favourite_icon">#c9485b</color>
+
+    <color name="types_title">#776E6E</color>
+    <color name="types_value">#3D3838</color>
+
+    //AnimeInfo Episodes
+    <color name="episode_background">#f8f8f8</color>
+    <color name="episode_watched_progress">@color/progress</color>
+    <color name="episode_text">#776E6E</color>
+
+
+    //Media Player Controls
+    <color name="media_player_controls">#ffffff</color>
+    <color name="buffer_loading">#CCFFFFFF</color>
+    <color name="media_player_controls_background">#80000000</color>
+
+
+    //Shimmer Background
+    <color name="shimmer_background">#dddddd</color>
+
+
+    <color name="apptheme_primary">#ff5722</color>
+    <color name="apptheme_primary_lighter">#ffff6c38</color>
+    <color name="apptheme_primary_disabled">#80ff5722</color>
+    <color name="apptheme_primary_dark">#e64a19</color>
+    <color name="apptheme_accent">#ffff00</color>
+    <color name="apptheme_white_status_bar">#909090</color>
+
+    <color name="gradient_start">#70000000</color>
+    <color name="gradient_light_start">#30000000</color>
+
+    <color name="text_gray_dark">#CC000000</color>
+    <color name="text_gray">#656565</color>
+    <color name="text_gray_light">#858585</color>
+    <color name="text_dark">#99000000</color>
+    <color name="text_light">#ccffffff</color>
+    <color name="text_dialog_action">@color/text_gray_dark</color>
+
+    <color name="divider">#507a7a7a</color>
+    <color name="divider_light">#307a7a7a</color>
+
+    <!-- button_borderless_neutral.xml -->
+    <color name="button_neutral">#15000000</color>
+
+    <color name="neutral">#888888</color>
+    <color name="neutral_pressed">#666666</color>
+    <color name="neutral_darker">#555555</color>
+
+    <!-- Selectors -->
+    <color name="selector_light">#50ffffff</color>
+    <color name="selector_light_stroke">#70ffffff</color>
+    <color name="selector_dark">#30000000</color>
+    <color name="selector_dark_stroke">#50000000</color>
+
+    <color name="button_ps_background">@android:color/white</color>
+    <color name="button_ps_background_pressed">#90ffffff</color>
+    <color name="button_ps_background_disabled">#80ffffff</color>
+    <color name="button_ps_stroke_only_stroke">#90ffffff</color>
+    <color name="button_ps_stroke_only_stroke_disabled">#80ffffff</color>
+    <color name="button_ps_stroke_only_background_pressed">#40ffffff</color>
+
+    <color name="login_border">#dddddd</color>
+    <color name="login_btn">#b2dfdb</color>
+
+    <color name="window_background">#dddddd</color>
+
+    <!-- Card colors -->
+    <color name="card_content">#fafafa</color>
+    <color name="card_content_pressed">#ededed</color>
+    <color name="card_content_disabled">#ccfafafa</color>
+    <color name="card_stroke">#f4f4f4</color>
+    <color name="card_stroke_pressed">#e7e7e7</color>
+    <color name="card_stroke_disabled">#ccf4f4f4</color>
+
+    <color name="flat_button_bg">#EBEBEB</color>
+    <color name="button_disabled">#ffab40</color>
+    <color name="error_color">#ffdd0200</color>
+
+    <!-- List -->
+    <color name="list_selected">#EBEBEB</color>
+    <color name="list_text_color">#212121</color>
+
+    <color name="shimmerColor">#B8B8B8</color>
+
+
+</resources>
