@@ -54,7 +54,9 @@ class NewsViewModel @Inject constructor(
         .shareIn(viewModelScope, SharingStarted.Lazily, 1)
 
     fun updateCategory(sortBy: String) = sortByFlow.tryEmit(sortBy)
+
     fun updateSortBy(sortBy: String) = sortByFlow.tryEmit(sortBy)
+
     fun updateKeyword(keyword: String) = keywordFlow.tryEmit(keyword)
 
     fun goToSettings() =

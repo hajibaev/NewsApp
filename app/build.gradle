@@ -68,12 +68,6 @@ dependencies {
 
     //picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
-//
-//    // kotlin koin
-//    def koin_version = "3.1.2"
-//    implementation "io.insert-koin:koin-core:$koin_version"
-//    implementation "io.insert-koin:koin-android:$koin_version"
-//    testImplementation "io.insert-koin:koin-test:$koin_version"
 
     // RoomDatabase
     def roomVersion = '2.4.3'

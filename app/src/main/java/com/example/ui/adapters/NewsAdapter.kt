@@ -2,6 +2,7 @@ package com.example.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.ListAdapter
 import com.example.R
 import com.example.models.ArticlesPresentation
@@ -24,6 +25,10 @@ class NewsAdapter(private val listener: RecyclerOnClickListener) :
             listener.onLongItem(getItem(position))
             true
         }
+        holder.itemView.startAnimation(
+            AnimationUtils.loadAnimation
+                (holder.itemView.context, R.anim.animationrv)
+        )
     }
 
     interface RecyclerOnClickListener {

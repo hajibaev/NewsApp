@@ -58,10 +58,13 @@ class TopNewsFragment :
     private fun observeViewModel() {
         viewModel.error.onEach {
             Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
+            requireBinding().generalProgress.visibility = View.VISIBLE
+
         }
         lifecycleScope.launchWhenStarted {
             viewModel.topNewsStateFlow.collectLatest {
                 adapter.submitList(it.articles)
+                requireBinding().generalProgress.visibility = View.INVISIBLE
             }
         }
     }

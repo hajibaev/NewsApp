@@ -12,9 +12,6 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.preference.PreferenceManager
-import com.broadcast.myapplication.adapter.animations.AddableItemAnimator
-import com.broadcast.myapplication.adapter.animations.custom.SlideInLeftCommonAnimator
-import com.broadcast.myapplication.adapter.animations.custom.SlideInTopCommonAnimator
 import com.example.R
 import com.example.base.BaseFragment
 import com.example.databinding.FragmentEverythingBinding
@@ -46,7 +43,6 @@ class EverythingFragment :
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        adapterAnimation()
         searchText()
         toggleDayNight()
         observeViewModel()
@@ -72,25 +68,16 @@ class EverythingFragment :
     private fun observeViewModel() = with(viewModel) {
         error.onEach {
             Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
+            requireBinding().generalProgress.visibility = View.VISIBLE
         }
-        requireBinding().everythingRV.postDelayed({
-            lifecycleScope.launchWhenStarted {
-                allNewsSharedFlow.collectLatest {
-                    newsAdapter.submitList(it.articles)
-                    requireBinding().generalProgress.visibility = View.GONE
-                }
+        lifecycleScope.launchWhenStarted {
+            allNewsSharedFlow.collectLatest {
+                newsAdapter.submitList(it.articles)
+                requireBinding().generalProgress.visibility = View.GONE
             }
-        }, 400L)
+        }
     }
 
-    private fun adapterAnimation() = with(requireBinding()) {
-        everythingRV.itemAnimator =
-            AddableItemAnimator(SlideInLeftCommonAnimator()).also { animator ->
-                animator.addViewTypeAnimation(R.layout.item_api, SlideInTopCommonAnimator())
-                animator.addDuration = 500L
-                animator.removeDuration = 500L
-            }
-    }
 
     private fun searchText() = requireBinding().serchView.apply {
         setOnQueryTextListener(object : SearchView.OnQueryTextListener {

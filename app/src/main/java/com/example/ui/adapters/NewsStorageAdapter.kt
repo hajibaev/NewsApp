@@ -12,7 +12,6 @@ import com.example.models.ArticlesPresentation
 import com.squareup.picasso.Picasso
 
 class NewsStorageAdapter(
-    private val favMovieEntityList: List<ArticlesPresentation>,
     private val listener: RecyclerFavOnClickListener
 ) : ListAdapter<ArticlesPresentation, NewsStorageAdapter.ViewHolder>(NewsDiffCallBack()) {
 
@@ -23,27 +22,23 @@ class NewsStorageAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(favMovieEntityList[position])
-
+        holder.bind(getItem(position))
         holder.itemView.setOnClickListener {
-            listener.onClearItemClick(position)
+            listener.onClearItemClick(getItem(position))
         }
         holder.itemView.setOnClickListener {
-            listener.onItemClick(position)
+            listener.onItemClick(getItem(position).url.toString())
         }
+        holder.bind(getItem(position))
         holder.itemView.startAnimation(
             AnimationUtils.loadAnimation
-                (holder.itemView.context, R.anim.animationrv)
+                (holder.itemView.context, R.anim.item_anim)
         )
     }
 
-    override fun getItemCount(): Int {
-        return favMovieEntityList.size
-    }
-
     interface RecyclerFavOnClickListener {
-        fun onItemClick(position: Int)
-        fun onClearItemClick(position: Int)
+        fun onItemClick(url: String)
+        fun onClearItemClick(article: ArticlesPresentation)
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -53,10 +48,10 @@ class NewsStorageAdapter(
                 Picasso.get().load(article.urlToImage).into(saveItemImage)
                 title.text = article.title
                 ivDelete.setOnClickListener {
-                    listener.onClearItemClick(adapterPosition)
+                    listener.onClearItemClick(getItem(adapterPosition))
                 }
                 cvMovie.setOnClickListener {
-                    listener.onItemClick(adapterPosition)
+                    listener.onItemClick(getItem(adapterPosition).url.toString())
                 }
             }
         }
